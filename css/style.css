@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1D1A1F;
+}
+
+header p {
+  font-family: "Anton", sans-serif;
+  color: rgb(236, 236, 236);
+}/*# sourceMappingURL=style.css.map */
