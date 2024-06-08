@@ -1,0 +1,131 @@
+@media (max-width: 1320px){
+    header{
+        //background-color: red;
+        padding: 0 60px;
+    }
+}
+@media (max-width: 1100px){
+    header{
+        //background-color: red;
+        padding: 0 50px;
+    }
+}
+@media (max-width: 950px){
+    header{
+        //background-color: red;
+        position: static;
+        
+
+        .hamburguesa_png{
+            display: block;
+            cursor: pointer;
+        }
+
+        .nav-bar{
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+            height: 0px;
+            width: 100vw;
+            //background-color: red;
+            transition: 0.5s;
+            overflow: hidden;
+            background-color: #1d1a1fc4;
+
+            
+            
+            ul{
+                display: block;
+                width: fit-content;
+                margin: 80px auto 0px auto;
+                text-align: center;
+                transition: 0.5s;
+                opacity: 0;
+                //background-color: yellow;
+            }
+
+            li{
+                margin:40px;
+            }
+
+            a{
+                margin-bottom: 12px;
+                font-size: 1.5em;
+            }
+        }
+
+        .nav-bar.active{
+            height: 450px;
+            ul{
+                opacity: 1;
+            }
+        }
+    }
+
+    .banner{
+        //background-color: red;
+        margin-top: 0;
+        
+        display: flex;
+        padding: 40px 90px;
+    
+        .nombre{
+            
+    
+        
+            h2{
+                font-family: $letra-texto;
+                font-weight: 700;
+                color: $color-principal;
+                font-size: 1em;
+            }
+    
+            h1{
+                margin-top: -10px;
+                
+                //background-color: red;
+                font-size: 5em;
+                font-family: $letra-titulos;
+                color: $color-principal;
+                text-shadow: -2.5px 2.5px 0px #A259FF;
+            }
+    
+            p{
+                font-family: $letra-texto;
+                font-weight: 600;
+                color: $color-principal;
+                font-size: .8em;
+                margin-top: 12px;
+            }
+    
+            span{
+                color: $color-complementos2;
+            }
+    
+            
+        }
+    
+        .memoji{
+            //background-color: red;
+    
+            video{
+                margin-top: 25px;
+                width: 80%;
+            }
+        }
+
+    }
+    
+}
+
+@media (max-width: 768px){
+    .banner{
+        flex-direction: column;
+        video{
+            width: 150%;
+        }
+    }
+}
+.col-12 {width: 100%;}
+

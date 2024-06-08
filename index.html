@@ -16,7 +16,8 @@
       <a class="logo" href="index.html">
         <p>Raquel López</p>
       </a>
-      <nav>
+      <img class="hamburguesa_png" src="img/menu_hamburguer.png" alt="" />
+      <nav class="nav-bar">
         <ul>
           <li>
             <a href="">Sobre mí</a>
@@ -37,10 +38,30 @@
       </nav>
     </header>
     <main>
-      <video autoplay loop muted>
-        <source src="video/memoji.mp4" type="video/mp4" />
-      </video>
+      <section class="banner col-12">
+        <div class="col-6 memoji">
+          <!-- <img src="img/portatil.png" alt="" /> -->
+          <video autoplay loop muted>
+            <source
+              class="video_memoji"
+              src="video/memoji.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="col-6 nombre">
+          <h2>
+            <span><img src="img/mano-que-saluda.png" alt="" /></span> ¡Hola! mi
+            nombre es
+          </h2>
+          <h1>Raquel</h1>
+          <p>
+            Soy estudiante de <span>desarrollo web</span> y <span>UX/UI</span>
+          </p>
+        </div>
+      </section>
     </main>
     <footer></footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -13,14 +13,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 30px 80px;
   position: fixed;
+  top: 0;
   z-index: 1;
   width: 100%;
   height: 104px;
-  background: linear-gradient(180deg, #151316 0%, rgba(29, 26, 31, 0) 100%);
+  background: linear-gradient(180deg, #0d0c0e 0%, rgba(21, 19, 22, 0) 78%);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -30,17 +29,22 @@ header .logo {
 header .logo p {
   font-family: "Dela Gothic One", sans-serif;
   color: rgb(236, 236, 236);
-  text-shadow: -4px 3px 0px #A259FF;
-  font-size: 1.9em;
+  font-size: 1.4em;
 }
-header nav ul {
+header .logo p:hover {
+  color: #A259FF;
+}
+header .hamburguesa_png {
+  display: none;
+}
+header .nav-bar ul {
   list-style: none;
   display: flex;
 }
-header nav li {
+header .nav-bar li {
   margin-left: 40px;
 }
-header nav a {
+header .nav-bar a {
   text-decoration: none;
   color: rgb(173, 173, 173);
   font-family: "Montserrat", sans-serif;
@@ -48,10 +52,10 @@ header nav a {
   font-size: 1.1em;
   position: relative;
 }
-header nav a:hover {
+header .nav-bar a:hover {
   color: rgb(236, 236, 236);
 }
-header nav a::before {
+header .nav-bar a::before {
   content: "";
   position: absolute;
   bottom: -8px;
@@ -62,12 +66,183 @@ header nav a::before {
   background-color: #DDEA4F;
   transition: all 0.5s;
 }
-header nav a:hover::before {
+header .nav-bar a:hover::before {
   width: 100%;
 }
 
-@media (max-width: 992px) {
+.banner {
+  margin-top: 104px;
+  display: flex;
+  padding: 40px 90px;
+}
+.banner .nombre h2 {
+  margin-top: 25%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: rgb(236, 236, 236);
+  font-size: 1.3em;
+}
+.banner .nombre h1 {
+  font-size: 7.2em;
+  font-family: "Dela Gothic One", sans-serif;
+  color: rgb(236, 236, 236);
+  text-shadow: -2.5px 2.5px 0px #A259FF;
+}
+.banner .nombre p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: rgb(236, 236, 236);
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+.banner .nombre span {
+  color: #DDEA4F;
+}
+.banner .memoji video {
+  margin-top: 25px;
+  width: 80%;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media (max-width: 1320px) {
+  header {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 950px) {
   header {
     position: static;
   }
+  header .hamburguesa_png {
+    display: block;
+    cursor: pointer;
+  }
+  header .nav-bar {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 0px;
+    width: 100vw;
+    transition: 0.5s;
+    overflow: hidden;
+    background-color: rgba(29, 26, 31, 0.768627451);
+  }
+  header .nav-bar ul {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 80px auto 0px auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  header .nav-bar li {
+    margin: 40px;
+  }
+  header .nav-bar a {
+    margin-bottom: 12px;
+    font-size: 1.5em;
+  }
+  header .nav-bar.active {
+    height: 450px;
+  }
+  header .nav-bar.active ul {
+    opacity: 1;
+  }
+  .banner {
+    margin-top: 0;
+    display: flex;
+    padding: 40px 90px;
+  }
+  .banner .nombre h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: rgb(236, 236, 236);
+    font-size: 1em;
+  }
+  .banner .nombre h1 {
+    margin-top: -10px;
+    font-size: 5em;
+    font-family: "Dela Gothic One", sans-serif;
+    color: rgb(236, 236, 236);
+    text-shadow: -2.5px 2.5px 0px #A259FF;
+  }
+  .banner .nombre p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: rgb(236, 236, 236);
+    font-size: 0.8em;
+    margin-top: 12px;
+  }
+  .banner .nombre span {
+    color: #DDEA4F;
+  }
+  .banner .memoji video {
+    margin-top: 25px;
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+  }
+  .banner video {
+    width: 150%;
+  }
+}
+.col-12 {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
