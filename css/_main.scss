@@ -8,19 +8,22 @@ $color-complementos2: #DDEA4F;
 $letra-texto: "Montserrat", sans-serif;
 $letra-titulos:"Dela Gothic One", sans-serif;
 
+
+
 .banner{
     //background-color: red;
     margin-top: 70px;
     display: flex;
-    padding: 40px 90px;
+    padding: 40px 150px;
+    height: 90vh;
 
     .nombre{
-        //background-color: red;
-        //margin-top: 150px;
+        //background-color: yellow;
+        margin-top: 150px;
 
     
         h2{
-            margin-top: 25%;
+            //margin-top: 25%;
             font-family: $letra-texto;
             font-weight: 700;
             color: $color-principal;
@@ -34,25 +37,76 @@ $letra-titulos:"Dela Gothic One", sans-serif;
             font-size: 7.2em;
             font-family: $letra-titulos;
             color: $color-principal;
-            text-shadow: -2.5px 2.5px 0px #A259FF;
-        }
-
-        p{
-            font-family: $letra-texto;
-            font-weight: 600;
-            color: $color-principal;
-            font-size: 1.2em;
-            margin-top: 15px;
-        }
-
-        span{
-            color: $color-complementos2;
+            text-shadow: -2.5px 2.5px 0px #DDEA4F, -4.5px 4.5px 0px #A259FF ;
         }
 
         
+
+        .descripcion_banner{
+          
+
+
+            p{
+                //background-color: red;
+                font-family: $letra-texto;
+                font-weight: 600;
+                color: $color-principal;
+                font-size: 1.2em;
+                margin-top: 15px;
+                display: block;
+                white-space: nowrap;
+                border-right: 3px solid;
+                width: 40ch;
+                animation: typing 4s steps(40), blink .5s step-end infinite alternate;
+                overflow: hidden;
+                color: $color-principal;
+    
+            }
+
+            @keyframes typing{
+                from{
+                    width: 0%;
+                }
+                
+               
+            }
+            
+            @keyframes blink{
+                50%{
+                    border-color:transparent;
+                }
+            }
+
+            
+
+            span{
+                color: $color-complementos2;
+            }
+
+        }
+       
+        
+    }
+    
+
+   
+
+}
+
+.sobre-mi{
+    //background-color: green;
+    padding: 50px 80px ;
+    
+    
+    .titulo{
+        text-align: center;
+        font-size: 1.2em;
+        font-family: $letra-titulos;
+        color: $color-principal;
+            
     }
 
-    .memoji{
+     .memoji{
         //background-color: red;
 
         video{
@@ -61,8 +115,9 @@ $letra-titulos:"Dela Gothic One", sans-serif;
         }
 
     }
-
 }
+
+
 
 
 

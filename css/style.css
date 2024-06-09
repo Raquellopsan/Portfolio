@@ -19,7 +19,7 @@ header {
   z-index: 1;
   width: 100%;
   height: 104px;
-  background: linear-gradient(180deg, #0d0c0e 0%, rgba(21, 19, 22, 0) 78%);
+  background: linear-gradient(180deg, #0d0c0e 0%, rgba(21, 19, 22, 0) 60%);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -71,10 +71,13 @@ header .nav-bar a:hover::before {
 .banner {
   margin-top: 70px;
   display: flex;
-  padding: 40px 90px;
+  padding: 40px 150px;
+  height: 90vh;
+}
+.banner .nombre {
+  margin-top: 150px;
 }
 .banner .nombre h2 {
-  margin-top: 25%;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: rgb(236, 236, 236);
@@ -84,19 +87,46 @@ header .nav-bar a:hover::before {
   font-size: 7.2em;
   font-family: "Dela Gothic One", sans-serif;
   color: rgb(236, 236, 236);
-  text-shadow: -2.5px 2.5px 0px #A259FF;
+  text-shadow: -2.5px 2.5px 0px #DDEA4F, -4.5px 4.5px 0px #A259FF;
 }
-.banner .nombre p {
+.banner .nombre .descripcion_banner p {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: rgb(236, 236, 236);
   font-size: 1.2em;
   margin-top: 15px;
+  display: block;
+  white-space: nowrap;
+  border-right: 3px solid;
+  width: 40ch;
+  animation: typing 4s steps(40), blink 0.5s step-end infinite alternate;
+  overflow: hidden;
+  color: rgb(236, 236, 236);
 }
-.banner .nombre span {
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.banner .nombre .descripcion_banner span {
   color: #DDEA4F;
 }
-.banner .memoji video {
+
+.sobre-mi {
+  padding: 50px 80px;
+}
+.sobre-mi .titulo {
+  text-align: center;
+  font-size: 1.2em;
+  font-family: "Dela Gothic One", sans-serif;
+  color: rgb(236, 236, 236);
+}
+.sobre-mi .memoji video {
   margin-top: 25px;
   width: 80%;
 }
