@@ -1,7 +1,7 @@
 //variables
 $color-fondo: #1D1A1F;
-$color-principal: rgb(236, 236, 236);
-$color-secundario: rgb(173, 173, 173);
+$color-principal: #ECECEC;
+$color-secundario: #ADADAD;
 $color-complementos: #A259FF;
 $color-complementos2: #DDEA4F;
 
@@ -32,7 +32,7 @@ header{
     z-index: 1;
     width: 100%;
     height: 104px;
-    background: linear-gradient(180deg,#0d0c0e 0%, #15131600 60%);
+    background: linear-gradient(180deg,#080808 0%, #15131600 100%);
     background-size: 100%;
     background-repeat: no-repeat;
 
@@ -47,10 +47,7 @@ header{
             font-size: 1.4em;
         }
 
-        
     }
-
-    
 
     .hamburguesa_png{
         display: none;
