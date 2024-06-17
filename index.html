@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!--HEADER-->
     <header>
       <a class="logo" href="index.html">
         <p>raquelLopez();</p>
@@ -23,13 +23,10 @@
             <a href="#sobreMi">Sobre mí</a>
           </li>
           <li>
+            <a href="#tecnologias">Tecnologías</a>
+          </li>
+          <li>
             <a href="">Portfolio</a>
-          </li>
-          <li>
-            <a href="">Tools</a>
-          </li>
-          <li>
-            <a href="">Otros</a>
           </li>
           <li>
             <a href="">Contacto</a>
@@ -37,7 +34,12 @@
         </ul>
       </nav>
     </header>
+
+    <!--MAIN-->
+
     <main>
+      <!--SECCION1: BANNER-->
+
       <section class="banner col-12">
         <div class="col-12 nombre">
           <h2>
@@ -70,13 +72,40 @@
           </div>
         </div>
       </section>
+
+      <!--SECCION2: SOBRE MÍ-->
+
       <section class="sobre-mi" id="sobreMi">
         <div class="col-12 titulo">
           <h1>Sobre mí</h1>
         </div>
         <div class="contenedor_sobremi">
           <div class="col-6 descripcion">
-            <h1>hola</h1>
+            <p class="ubicacion">
+              <span><img src="img/ubicacion.png" alt="" /></span>
+              Madrid, España
+            </p>
+            <div class="texto_descripcion">
+              <p>
+                He crecido en una familia de programadores y ahora también
+                diseñadores así que no era de extrañar que yo desarrollara el
+                mismo gusto por la tecnología.
+              </p>
+              <p>
+                A pesar de especializarme en entornos 3D para videojuegos (<span
+                  ><a
+                    href="https://www.artstation.com/raquellopsan"
+                    target="_blank"
+                    >echa un ojo a mi artstation</a
+                  ></span
+                >) decidí empezar a formarme en lo que realmente me llamaba: el
+                diseño y la programación web.
+              </p>
+              <p>Me gusta estar actualizada y en contante aprendizaje.</p>
+            </div>
+            <div class="button_cv">
+              <p>Descarga mi CV</p>
+            </div>
           </div>
           <div class="col-6 memoji">
             <video autoplay loop muted>
@@ -89,6 +118,48 @@
           </div>
         </div>
       </section>
+
+      <!--SECCION3: TECNOLOGÍAS-->
+      <section class="tecnologias" id="tecnologias">
+        <div class="col-12 titulo">
+          <h1>Tecnologías</h1>
+        </div>
+        <div class="contenedor_tecnologias">
+          <div class="scroll">
+            <div class="card">
+              <img src="img/html-5.png" alt="" />
+              <p>HTML</p>
+            </div>
+            <div class="card">
+              <img src="img/css-3.png" alt="" />
+              <p>CSS3</p>
+            </div>
+            <div class="card">
+              <img src="img/js.png" alt="" />
+              <p>Javascript</p>
+            </div>
+            <div class="card">
+              <img src="img/sass.png" alt="" />
+              <p>Sass</p>
+            </div>
+            <div class="card">
+              <img src="img/bootstrap.png" alt="" />
+              <p>Bootstrap</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--SECCION4: PORTFOLIO-->
+      <section></section>
+      <!--SECCION6: CONTACTO-->
+      <section></section>
+
+      <!--FLECHA TO TOP-->
+
+      <a href="index.html" class="to-top">
+        <img src="img/flecha-hacia-arriba.png" alt="" />
+      </a>
     </main>
     <footer></footer>
     <script src="js/main.js"></script>

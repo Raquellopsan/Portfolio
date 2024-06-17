@@ -3,7 +3,7 @@ $color-fondo: #1D1A1F;
 $color-principal: rgb(236, 236, 236);
 $color-secundario: rgb(173, 173, 173);
 $color-complementos: #A259FF;
-$color-complementos2: #DDEA4F;
+$color-complementos2: rgb(221, 234, 79);
 
 $letra-texto: "Montserrat", sans-serif;
 $letra-titulos:"Dela Gothic One", sans-serif;
@@ -111,7 +111,7 @@ $letra-titulos:"Dela Gothic One", sans-serif;
     
     .titulo{
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1.7em;
         font-family: $letra-titulos;
         color: $color-complementos;
             
@@ -119,6 +119,75 @@ $letra-titulos:"Dela Gothic One", sans-serif;
 
     .contenedor_sobremi{
         display: flex;
+        //background-color: red;
+        margin-top: 50px;
+        
+
+        .descripcion{
+            //background-color: green;
+            padding: 25px;
+            .ubicacion{
+                display: flex;
+                align-items: center;
+                font-family: $letra-texto;
+                font-weight: 500;
+                color: $color-principal;
+                font-size: 1em;
+    
+                span{
+                    margin-right: 5px;
+                }
+
+            }
+            .texto_descripcion{
+                //background-color: red;
+                font-family: $letra-texto;
+                font-weight: 500;
+                color: $color-principal;
+                margin-top: 20px;
+                font-size: 1.2em;
+                p{
+                    margin-top: 20px;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $color-complementos;
+                }
+
+             
+                
+            }
+            .button_cv{
+                background-color: none;
+                border:1px solid #DDEA4F;
+                margin-top: 50px;
+                height: 60px;
+                width: 170px;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: $letra-texto;
+                font-weight: 500;
+                color: $color-complementos2;
+                transition: all 0.3s;
+                
+
+                &:hover{
+                    box-shadow: 0 0 6px rgb(221,234,79) inset,
+                    0 0 10px 2px rgba(255,175,0,0.5) inset,
+                    0 0 15px 4px rgba(255,225,0,0.4) inset,
+                    5px 5px 5px rgba(0, 0, 0, 0.2);
+                    transition: all 0.3s;
+                }
+            }
+
+            
+        }
+
+
+   
 
         .memoji{
            //background-color: red;
@@ -136,6 +205,86 @@ $letra-titulos:"Dela Gothic One", sans-serif;
 
 
     }
+}
+
+.tecnologias{
+    //background-color: red;
+    padding: 50px 80px ;
+    .titulo{
+        text-align: center;
+        font-size: 1.7em;
+        font-family: $letra-titulos;
+        color: $color-complementos;
+    }
+
+    .contenedor_tecnologias{
+        overflow: hidden;
+        mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+        .scroll{
+            display: flex;
+            gap: 1rem;
+            flex-wrap: nowrap;
+            width: max-content;
+            padding-bottom: 1rem;
+            
+
+            @keyframes scroll{
+                0%{
+                    transform: translateX(100%);
+                }
+                100%{
+                    transform: translateX(-100%);
+                }
+            }
+    
+            .card{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border: 2px solid $color-principal;
+                color: $color-principal;
+                font-family: $letra-texto;
+                font-weight: 500;
+                border-radius: 7px;
+                padding: 5px 10px;
+                transition: .3s;
+                font-size: 1.2rem;
+                cursor: default;
+                height: 50px;
+                width: 100%;
+                animation: scroll 20s linear infinite;
+            }
+            
+            
+        }
+    }
+
+  
+}
+
+.to-top{
+    background: #0e0d0f;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    transition: all .6s;
+    opacity: 0;
+
+    
+
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
 
 

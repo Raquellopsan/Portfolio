@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -114,7 +115,7 @@ header .nav-bar a:hover::before {
   }
 }
 .banner .descripcion_banner span {
-  color: #DDEA4F;
+  color: rgb(221, 234, 79);
 }
 .banner .logos_navbar {
   margin-top: 20px;
@@ -131,12 +132,60 @@ header .nav-bar a:hover::before {
 }
 .sobre-mi .titulo {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.7em;
   font-family: "Dela Gothic One", sans-serif;
   color: #A259FF;
 }
 .sobre-mi .contenedor_sobremi {
   display: flex;
+  margin-top: 50px;
+}
+.sobre-mi .contenedor_sobremi .descripcion {
+  padding: 25px;
+}
+.sobre-mi .contenedor_sobremi .descripcion .ubicacion {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: rgb(236, 236, 236);
+  font-size: 1em;
+}
+.sobre-mi .contenedor_sobremi .descripcion .ubicacion span {
+  margin-right: 5px;
+}
+.sobre-mi .contenedor_sobremi .descripcion .texto_descripcion {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: rgb(236, 236, 236);
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+.sobre-mi .contenedor_sobremi .descripcion .texto_descripcion p {
+  margin-top: 20px;
+}
+.sobre-mi .contenedor_sobremi .descripcion .texto_descripcion a {
+  text-decoration: none;
+  color: #A259FF;
+}
+.sobre-mi .contenedor_sobremi .descripcion .button_cv {
+  background-color: none;
+  border: 1px solid #DDEA4F;
+  margin-top: 50px;
+  height: 60px;
+  width: 170px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: rgb(221, 234, 79);
+  transition: all 0.3s;
+}
+.sobre-mi .contenedor_sobremi .descripcion .button_cv:hover {
+  box-shadow: 0 0 6px rgb(221, 234, 79) inset, 0 0 10px 2px rgba(255, 175, 0, 0.5) inset, 0 0 15px 4px rgba(255, 225, 0, 0.4) inset, 5px 5px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
 }
 .sobre-mi .contenedor_sobremi .memoji {
   display: flex;
@@ -144,6 +193,76 @@ header .nav-bar a:hover::before {
 }
 .sobre-mi .contenedor_sobremi .memoji video {
   width: 80%;
+}
+
+.tecnologias {
+  padding: 50px 80px;
+}
+.tecnologias .titulo {
+  text-align: center;
+  font-size: 1.7em;
+  font-family: "Dela Gothic One", sans-serif;
+  color: #A259FF;
+}
+.tecnologias .contenedor_tecnologias {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+          mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+.tecnologias .contenedor_tecnologias .scroll {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 1rem;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.tecnologias .contenedor_tecnologias .scroll .card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid rgb(236, 236, 236);
+  color: rgb(236, 236, 236);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  border-radius: 7px;
+  padding: 5px 10px;
+  transition: 0.3s;
+  font-size: 1.2rem;
+  cursor: default;
+  height: 50px;
+  width: 100%;
+  animation: scroll 20s linear infinite;
+}
+
+.to-top {
+  background: #0e0d0f;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  transition: all 0.6s;
+  opacity: 0;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .col-1 {
@@ -271,7 +390,7 @@ header .nav-bar a:hover::before {
     margin-top: 12px;
   }
   .banner .nombre span {
-    color: #DDEA4F;
+    color: rgb(221, 234, 79);
   }
   .banner .memoji video {
     margin-top: 25px;
