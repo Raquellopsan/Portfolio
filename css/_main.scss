@@ -55,7 +55,8 @@ $letra-titulos:"Dela Gothic One", sans-serif;
             display: block;
             white-space: nowrap;
             border-right: 3px solid;
-            width: 40ch;
+            display: inline-block;
+            width: 275px;
             animation: typing 4s steps(40), blink .5s step-end infinite alternate;
             overflow: hidden;
             color: $color-principal;
@@ -285,7 +286,6 @@ $letra-titulos:"Dela Gothic One", sans-serif;
        
     }
 
-  
 }
 
 .portfolio{
