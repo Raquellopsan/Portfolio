@@ -210,6 +210,7 @@ $letra-titulos:"Dela Gothic One", sans-serif;
 .tecnologias{
     //background-color: red;
     padding: 50px 80px ;
+
     .titulo{
         text-align: center;
         font-size: 1.7em;
@@ -217,49 +218,132 @@ $letra-titulos:"Dela Gothic One", sans-serif;
         color: $color-complementos;
     }
 
+    .texto{
+        text-align: center;
+        font-family: $letra-texto;
+        font-weight: 500;
+        color: $color-principal;
+        margin-top: 40px;
+        font-size: 1.2em;
+    }
+
     .contenedor_tecnologias{
+        
+        margin-top: 70px;
         overflow: hidden;
         mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-        .scroll{
+       
+        @keyframes scroll{
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+        @keyframes scroll2{
+            0%{
+                transform: translateX(-100%);
+            }
+            100%{
+                transform: translateX(100%);
+            }
+        }
+        .scroll1{
             display: flex;
             gap: 1rem;
             flex-wrap: nowrap;
             width: max-content;
-            padding-bottom: 1rem;
-            
-
-            @keyframes scroll{
-                0%{
-                    transform: translateX(100%);
-                }
-                100%{
-                    transform: translateX(-100%);
-                }
-            }
-    
-            .card{
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                border: 2px solid $color-principal;
-                color: $color-principal;
-                font-family: $letra-texto;
-                font-weight: 500;
-                border-radius: 7px;
-                padding: 5px 10px;
-                transition: .3s;
-                font-size: 1.2rem;
-                cursor: default;
-                height: 50px;
-                width: 100%;
-                animation: scroll 20s linear infinite;
-            }
-            
-            
+            padding-bottom: 16px;
+            animation: scroll 40s linear infinite;
+             
         }
+        .scroll2{
+            display: flex;
+            gap: 1rem;
+            flex-wrap: nowrap;
+            width: max-content;
+            padding-bottom: 16px;
+            animation: scroll2 40s linear infinite;
+        }
+        .card{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 2px solid $color-principal;
+            color: $color-principal;
+            font-family: $letra-texto;
+            font-weight: 500;
+            border-radius: 7px;
+            padding: 5px 10px;
+            font-size: 1.2rem;
+            cursor: default;
+            height: 50px;
+            width: 100%;
+        }
+
+       
     }
 
   
+}
+
+.portfolio{
+    padding: 50px 80px ;
+    .titulo{
+        text-align: center;
+        font-size: 1.7em;
+        font-family: $letra-titulos;
+        color: $color-complementos;
+    }
+
+    .galery_portfolio{
+        .categorias{
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: center;
+                gap: 15px;
+                margin-top: 50px;
+
+                li{
+                    color: $color-secundario;
+                    font-family: $letra-texto;
+                    font-weight: 600;
+                    font-size: 1.1em;
+                }
+
+                li.active{
+                    color: $color-complementos2;
+                }
+            }
+        }
+
+        .proyectos_galery{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            .card_proyecto{
+                width: 200px;
+                height: 200px;
+                
+            }
+
+            .card1{
+                background-color: greenyellow;
+            }
+            .card2{
+                background-color: orange
+            }
+            .card3{
+                background-color: yellow;
+            }
+           
+        }
+    }
 }
 
 .to-top{

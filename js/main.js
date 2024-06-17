@@ -18,3 +18,8 @@ window.addEventListener("scroll", () => {
     toTop.classList.remove("active");
   }
 });
+
+// OPCIONES GALERIA PORTFOLIO
+
+const categorias = document.querySelector(".categorias");
+const proyectos = document.querySelectorAll(".card_proyecto");

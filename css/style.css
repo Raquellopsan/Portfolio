@@ -204,18 +204,19 @@ header .nav-bar a:hover::before {
   font-family: "Dela Gothic One", sans-serif;
   color: #A259FF;
 }
+.tecnologias .texto {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: rgb(236, 236, 236);
+  margin-top: 40px;
+  font-size: 1.2em;
+}
 .tecnologias .contenedor_tecnologias {
+  margin-top: 70px;
   overflow: hidden;
   -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
           mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
-.tecnologias .contenedor_tecnologias .scroll {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: nowrap;
-  width: -moz-max-content;
-  width: max-content;
-  padding-bottom: 1rem;
 }
 @keyframes scroll {
   0% {
@@ -225,7 +226,33 @@ header .nav-bar a:hover::before {
     transform: translateX(-100%);
   }
 }
-.tecnologias .contenedor_tecnologias .scroll .card {
+@keyframes scroll2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.tecnologias .contenedor_tecnologias .scroll1 {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 16px;
+  animation: scroll 40s linear infinite;
+}
+.tecnologias .contenedor_tecnologias .scroll2 {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 16px;
+  animation: scroll2 40s linear infinite;
+}
+.tecnologias .contenedor_tecnologias .card {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -235,12 +262,56 @@ header .nav-bar a:hover::before {
   font-weight: 500;
   border-radius: 7px;
   padding: 5px 10px;
-  transition: 0.3s;
   font-size: 1.2rem;
   cursor: default;
   height: 50px;
   width: 100%;
-  animation: scroll 20s linear infinite;
+}
+
+.portfolio {
+  padding: 50px 80px;
+}
+.portfolio .titulo {
+  text-align: center;
+  font-size: 1.7em;
+  font-family: "Dela Gothic One", sans-serif;
+  color: #A259FF;
+}
+.portfolio .galery_portfolio .categorias ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+.portfolio .galery_portfolio .categorias ul li {
+  color: rgb(173, 173, 173);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.portfolio .galery_portfolio .categorias ul li.active {
+  color: rgb(221, 234, 79);
+}
+.portfolio .galery_portfolio .proyectos_galery {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.portfolio .galery_portfolio .proyectos_galery .card_proyecto {
+  width: 200px;
+  height: 200px;
+}
+.portfolio .galery_portfolio .proyectos_galery .card1 {
+  background-color: greenyellow;
+}
+.portfolio .galery_portfolio .proyectos_galery .card2 {
+  background-color: orange;
+}
+.portfolio .galery_portfolio .proyectos_galery .card3 {
+  background-color: yellow;
 }
 
 .to-top {
