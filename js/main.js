@@ -29,3 +29,6 @@ setTimeout(() => {
 
 const categorias = document.querySelector(".categorias");
 const proyectos = document.querySelectorAll(".card_proyecto");
+
+// SECCION.offsetTop
+// window.scrollY >= SECCION.offsetTop
