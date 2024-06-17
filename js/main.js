@@ -19,6 +19,12 @@ window.addEventListener("scroll", () => {
   }
 });
 
+const video = document.querySelector("video");
+
+setTimeout(() => {
+  video.play();
+}, 500);
+
 // OPCIONES GALERIA PORTFOLIO
 
 const categorias = document.querySelector(".categorias");
