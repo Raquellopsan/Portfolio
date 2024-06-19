@@ -19,6 +19,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
+//VIDEO.
+
 const video = document.querySelector("video");
 
 setTimeout(() => {
