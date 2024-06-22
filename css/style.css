@@ -175,7 +175,7 @@ header .nav-bar a:hover::before {
   margin-top: 50px;
   height: 60px;
   width: 170px;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,6 +313,83 @@ header .nav-bar a:hover::before {
 }
 .portfolio .galery_portfolio .proyectos_galery .card3 {
   background-color: yellow;
+}
+
+.contacto {
+  padding: 50px 80px;
+}
+.contacto .titulo {
+  text-align: center;
+  font-size: 1.7em;
+  font-family: "Dela Gothic One", sans-serif;
+  color: #A259FF;
+}
+.contacto .formulario {
+  margin-top: 1000px;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.contacto .formulario .contenedor_formulario {
+  display: grid;
+  gap: 40px;
+}
+.contacto .formulario .contenedor_formulario .grupo_formulario {
+  color: #7c7c7c;
+  display: flex;
+  flex-direction: column;
+}
+.contacto .formulario .contenedor_formulario .grupo_formulario input {
+  width: 100%;
+  background: none;
+  color: rgb(236, 236, 236);
+  font-size: 1rem;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #0e0d0f;
+  font-family: "Montserrat", sans-serif;
+}
+.contacto .formulario .contenedor_formulario .grupo_formulario label {
+  text-align: start;
+  width: 100%;
+}
+.contacto .formulario .contenedor_formulario .grupo_formulario textarea {
+  width: 100%;
+  margin-top: 10px;
+  background: #0e0d0f;
+  color: rgb(236, 236, 236);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  height: 250px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.contacto .formulario .contenedor_formulario .button_form {
+  background-color: transparent;
+  border: 1px solid #DDEA4F;
+  color: #DDEA4F;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  padding: 15px 0;
+  border-radius: 10px;
+  width: 25%;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  margin-left: auto;
+}
+.contacto .formulario .contenedor_formulario .button_form:hover {
+  box-shadow: 0 0 6px rgb(221, 234, 79) inset, 0 0 10px 2px rgba(255, 175, 0, 0.5) inset, 0 0 15px 4px rgba(255, 225, 0, 0.4) inset, 5px 5px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
 }
 
 .to-top {

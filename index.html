@@ -29,7 +29,7 @@
             <a href="#portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="">Contacto</a>
+            <a href="#contacto">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -155,11 +155,11 @@
           <div class="scroll2">
             <div class="card">
               <img src="img/ilustrador-adobe.png" alt="" />
-              <p>Adobe Illustrator</p>
+              <p>Adobe&nbsp;Illustrator</p>
             </div>
             <div class="card">
               <img src="img/photoshop.png" alt="" />
-              <p>Adobe Photoshop</p>
+              <p>Adobe&nbsp;Photoshop</p>
             </div>
             <div class="card">
               <img src="img/git.png" alt="" />
@@ -202,8 +202,52 @@
           </div>
         </div>
       </section>
+
       <!--SECCION5: CONTACTO-->
-      <section></section>
+      <section class="contacto" id="contacto">
+        <div class="col-12 titulo">
+          <h1>Contacto</h1>
+        </div>
+        <form class="formulario" id="formulario">
+          <div class="contenedor_formulario">
+            <div class="grupo_formulario">
+              <label for="nombre">Nombre completo:</label>
+              <input type="text" name="nombre" id="nombre" placeholder=" " />
+            </div>
+            <div class="grupo_formulario">
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email" placeholder=" " />
+            </div>
+            <div class="grupo_formulario">
+              <label for="mensaje">Mensaje:</label>
+              <textarea name="mensaje" id="mensaje"></textarea>
+            </div>
+
+            <input
+              type="submit"
+              class="button_form"
+              value="Enviar"
+              id="enviar"
+              onclick="validar(event)"
+            />
+
+            <p
+              id="respuesta"
+              style="
+                color: red;
+                text-align: start;
+                font-weight: 600;
+                margin-left: 20px;
+                margin-top: -30px;
+                width: 100%;
+                width: max-content;
+              "
+            >
+              hola
+            </p>
+          </div>
+        </form>
+      </section>
 
       <!--FLECHA TO TOP-->
 
@@ -211,6 +255,8 @@
         <img src="img/flecha-hacia-arriba.png" alt="" />
       </a>
     </main>
+
+    <!--FOOTER-->
     <footer></footer>
     <script src="js/main.js"></script>
   </body>

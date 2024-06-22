@@ -34,3 +34,25 @@ const proyectos = document.querySelectorAll(".card_proyecto");
 
 // SECCION.offsetTop
 // window.scrollY >= SECCION.offsetTop
+
+function validar(event) {
+  event.preventDefault();
+  console.log("dentro...");
+  let inputNombre = document.querySelector("#nombre").value;
+  let inputEmail = document.querySelector("#email").value;
+  let inputMensaje = document.querySelector("#mensaje").value;
+
+  let regla =
+    /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  if (inputNombre == "" || inputEmail == "" || inputMensaje == "") {
+    document.querySelector("#respuesta").innerHTML =
+      "Debe rellenar todos los campos";
+  } else if (!regla.test(inputEmail)) {
+    document.querySelector("#respuesta").innerHTML = "Email no válido";
+  } else {
+    document.querySelector("#respuesta").innerHTML =
+      "Formulario enviado con éxito";
+    document.getElementById("formulario").submit();
+  }
+}
