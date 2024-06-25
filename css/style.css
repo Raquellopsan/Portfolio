@@ -7,7 +7,6 @@
 
 body {
   background-color: #1D1A1F;
-  height: 2000vh;
 }
 
 header {
@@ -290,6 +289,7 @@ header .nav-bar a:hover::before {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.1em;
+  cursor: pointer;
 }
 .portfolio .galery_portfolio .categorias ul li.active {
   color: rgb(221, 234, 79);
@@ -420,6 +420,28 @@ header .nav-bar a:hover::before {
 
 .col-12 {
   width: 100%;
+}
+
+.footer {
+  background-color: #080708;
+  padding: 50px 80px;
+  height: 35vh;
+}
+.footer .logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer hr {
+  width: 50%;
+  margin: 30px auto;
+}
+.footer p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: rgb(236, 236, 236);
+  text-align: center;
 }
 
 @media (max-width: 1320px) {

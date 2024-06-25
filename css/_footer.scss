@@ -1,0 +1,47 @@
+//VARIABLES
+$color-fondo: #1D1A1F;
+$color-principal: rgb(236, 236, 236);
+$color-secundario: rgb(173, 173, 173);
+$color-complementos: #A259FF;
+$color-complementos2: rgb(221, 234, 79);
+
+$letra-texto: "Montserrat", sans-serif;
+$letra-titulos:"Dela Gothic One", sans-serif;
+
+.footer{
+    
+    background-color: #080708;
+    padding: 50px 80px ;
+    height: 35vh;
+    
+    
+
+    .logos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    hr{
+        
+        width: 50%;
+        margin: 30px auto;
+        
+    }
+
+    p{
+        font-family: $letra-texto;
+        font-weight: 500;
+        color: $color-principal;
+        text-align: center;
+    }
+    
+
+
+
+
+
+
+
+}

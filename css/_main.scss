@@ -294,6 +294,7 @@ $letra-titulos:"Dela Gothic One", sans-serif;
         font-size: 1.7em;
         font-family: $letra-titulos;
         color: $color-complementos;
+        
     }
 
     .galery_portfolio{
@@ -310,6 +311,8 @@ $letra-titulos:"Dela Gothic One", sans-serif;
                     font-family: $letra-texto;
                     font-weight: 600;
                     font-size: 1.1em;
+                    cursor: pointer;
+                    
                 }
 
                 li.active{
@@ -408,7 +411,6 @@ $letra-titulos:"Dela Gothic One", sans-serif;
                     height: 250px;
                     border-radius: 10px;
                     padding: 10px;
-
                 }
             }
 
