@@ -425,13 +425,16 @@ header .nav-bar a:hover::before {
 .footer {
   background-color: #080708;
   padding: 50px 80px;
-  height: 35vh;
+  height: 40vh;
 }
 .footer .logos {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+}
+.footer .correo {
+  margin-top: 20px;
 }
 .footer hr {
   width: 50%;
