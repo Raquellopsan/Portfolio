@@ -214,6 +214,7 @@ header .nav-bar a:hover::before {
 }
 .tecnologias .contenedor_tecnologias {
   margin-top: 70px;
+  width: 90%;
   overflow: hidden;
   -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
           mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
@@ -291,7 +292,7 @@ header .nav-bar a:hover::before {
   font-size: 1.1em;
   cursor: pointer;
 }
-.portfolio .galery_portfolio .categorias ul li.active {
+.portfolio .galery_portfolio .categorias ul .filter-items.active {
   color: rgb(221, 234, 79);
 }
 .portfolio .galery_portfolio .proyectos_galery {
@@ -313,6 +314,20 @@ header .nav-bar a:hover::before {
 }
 .portfolio .galery_portfolio .proyectos_galery .card3 {
   background-color: yellow;
+}
+.portfolio .galery_portfolio .proyectos_galery .card_proyecto.hide {
+  display: none;
+}
+.portfolio .galery_portfolio .proyectos_galery .card_proyecto.show {
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .contacto {
@@ -353,7 +368,7 @@ header .nav-bar a:hover::before {
   padding: 0.6em 0.3em;
   border: none;
   outline: none;
-  border-bottom: 3px solid #0e0d0f;
+  border-bottom: 2px solid #0e0d0f;
   font-family: "Montserrat", sans-serif;
 }
 .contacto .formulario .contenedor_formulario .grupo_formulario label {
@@ -373,6 +388,7 @@ header .nav-bar a:hover::before {
   padding: 10px;
 }
 .contacto .formulario .contenedor_formulario .button_form {
+  display: block;
   background-color: transparent;
   border: 1px solid #DDEA4F;
   color: #DDEA4F;
@@ -381,10 +397,9 @@ header .nav-bar a:hover::before {
   font-size: 1em;
   padding: 15px 0;
   border-radius: 10px;
-  width: 25%;
+  width: 100px;
   cursor: pointer;
   transition: all 0.3s;
-  display: flex;
   margin-left: auto;
 }
 .contacto .formulario .contenedor_formulario .button_form:hover {
@@ -426,6 +441,7 @@ header .nav-bar a:hover::before {
   background-color: #080708;
   padding: 50px 80px;
   height: 40vh;
+  z-index: 2;
 }
 .footer .logos {
   display: flex;

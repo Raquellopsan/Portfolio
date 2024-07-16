@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script defer src="js/main.js"></script>
   </head>
   <body>
     <!--HEADER-->
@@ -124,26 +125,26 @@
         </div>
         <div class="contenedor_tecnologias">
           <div class="scroll1">
-            <div class="card">
+            <span class="card scroll1_01">
               <img src="img/html-5.png" alt="" />
               <p>HTML</p>
-            </div>
-            <div class="card">
+            </span>
+            <span class="card scroll1_02">
               <img src="img/css-3.png" alt="" />
               <p>CSS3</p>
-            </div>
-            <div class="card">
+            </span>
+            <span class="card scroll1_03">
               <img src="img/js.png" alt="" />
               <p>Javascript</p>
-            </div>
-            <div class="card">
+            </span>
+            <span class="card scroll1_04">
               <img src="img/sass.png" alt="" />
               <p>Sass</p>
-            </div>
-            <div class="card">
+            </span>
+            <span class="card scroll1_05">
               <img src="img/bootstrap.png" alt="" />
               <p>Bootstrap</p>
-            </div>
+            </span>
           </div>
           <div class="scroll2">
             <div class="card">
@@ -183,15 +184,15 @@
         <div class="galery_portfolio">
           <div class="categorias">
             <ul>
-              <li class="active">Todos</li>
-              <li data-filter="ux/ui">UX/UI</li>
-              <li data-filter="web">Web</li>
+              <li class="filter-items active" data-filter="todos">Todos</li>
+              <li class="filter-items" data-filter="ux/ui">UX/UI</li>
+              <li class="filter-items" data-filter="web">Web</li>
             </ul>
           </div>
           <div class="proyectos_galery">
-            <div class="card_proyecto card1"></div>
-            <div class="card_proyecto card2"></div>
-            <div class="card_proyecto card3"></div>
+            <div class="card_proyecto card1 web todos"></div>
+            <div class="card_proyecto card2 ux/ui todos"></div>
+            <div class="card_proyecto card3 web todos"></div>
           </div>
         </div>
       </section>
@@ -252,10 +253,11 @@
       <div class="logos">
         <a
           href="https://www.linkedin.com/in/raquel-l%C3%B3pez-s%C3%A1nchez-596597159/"
+          target="_blank"
         >
           <img src="img/linkedin.png" alt="" />
         </a>
-        <a href="https://github.com/Raquellopsan">
+        <a href="https://github.com/Raquellopsan" target="_blank">
           <img src="img/github.png" alt="" />
         </a>
       </div>
@@ -271,6 +273,5 @@
       <br />
       <p>© 2024, Raquel López. Todos los derechos reservados.</p>
     </footer>
-    <script src="js/main.js"></script>
   </body>
 </html>
