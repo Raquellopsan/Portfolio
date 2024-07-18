@@ -604,6 +604,66 @@ header .nav-bar a:hover::before {
     font-size: 0.9em;
   }
 }
+@media (max-width: 375px) {
+  .banner {
+    margin-top: -40px;
+    padding: 40px 30px;
+  }
+  .banner .nombre h2 {
+    font-size: 0.9em;
+  }
+  .banner .nombre h1 {
+    margin-top: -10px;
+    font-size: 4.5em;
+  }
+  .banner .nombre p {
+    font-size: 0.8em;
+    width: 275px;
+  }
+  .sobre-mi {
+    padding: 50px 20px;
+  }
+  .sobre-mi .contenedor_sobremi {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .sobre-mi .contenedor_sobremi .descripcion {
+    width: 100%;
+    padding: 10px;
+  }
+  .sobre-mi .contenedor_sobremi .descripcion .ubicacion {
+    font-size: 0.8em;
+  }
+  .sobre-mi .contenedor_sobremi .descripcion .texto_descripcion {
+    font-size: 0.9em;
+  }
+  .sobre-mi .contenedor_sobremi .memoji {
+    width: 80%;
+  }
+  .tecnologias {
+    padding: 50px 20px;
+  }
+  .tecnologias .titulo {
+    text-align: center;
+  }
+  .tecnologias .texto {
+    font-size: 0.9em;
+  }
+  .contacto {
+    padding: 50px 20px;
+  }
+  .contacto .formulario {
+    padding: 40px 10px;
+  }
+  .footer {
+    height: 45vh;
+    padding: 50px 40px;
+  }
+  .footer p {
+    font-size: 0.9em;
+  }
+}
 .col-12 {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */
