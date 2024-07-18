@@ -590,8 +590,10 @@ header .nav-bar a:hover::before {
   .tecnologias .texto {
     font-size: 1em;
   }
-  .tecnologias .card {
-    font-size: 1em;
+  .portfolio .galery_portfolio .proyectos_galery {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .contacto {
     padding: 50px 20px;
@@ -604,7 +606,7 @@ header .nav-bar a:hover::before {
     font-size: 0.9em;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   header {
     padding: 0 20px;
   }
@@ -657,11 +659,82 @@ header .nav-bar a:hover::before {
     padding: 50px 20px;
   }
   .contacto .formulario {
-    padding: 40px 10px;
+    padding: 40px 0px;
   }
   .footer {
     height: 45vh;
-    padding: 50px 40px;
+    padding: 50px 20px;
+  }
+  .footer p {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    padding: 0 20px;
+  }
+  .banner {
+    margin-top: -40px;
+    padding: 40px 20px;
+  }
+  .banner .nombre h2 {
+    font-size: 0.9em;
+  }
+  .banner .nombre h1 {
+    margin-top: -10px;
+    font-size: 4em;
+  }
+  .banner .nombre p {
+    font-size: 0.77em;
+    width: 266px;
+  }
+  .sobre-mi {
+    padding: 50px 10px;
+    margin-top: -40px;
+  }
+  .sobre-mi .titulo {
+    font-size: 1.4em;
+  }
+  .sobre-mi .contenedor_sobremi .descripcion {
+    width: 100%;
+    padding: 10px;
+  }
+  .sobre-mi .contenedor_sobremi .descripcion .ubicacion {
+    font-size: 0.8em;
+  }
+  .sobre-mi .contenedor_sobremi .descripcion .texto_descripcion {
+    font-size: 0.9em;
+  }
+  .sobre-mi .contenedor_sobremi .memoji {
+    width: 100%;
+  }
+  .portfolio {
+    padding: 50px 10px;
+  }
+  .portfolio .titulo {
+    font-size: 1.4em;
+  }
+  .tecnologias {
+    padding: 50px 10px;
+  }
+  .tecnologias .titulo {
+    font-size: 1.4em;
+  }
+  .tecnologias .texto {
+    font-size: 0.9em;
+  }
+  .contacto {
+    padding: 50px 10px;
+  }
+  .contacto .titulo {
+    font-size: 1.4em;
+  }
+  .contacto .formulario {
+    padding: 40px 0px;
+  }
+  .footer {
+    height: 50vh;
+    padding: 50px 10px;
   }
   .footer p {
     font-size: 0.9em;
