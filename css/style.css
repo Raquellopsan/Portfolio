@@ -408,7 +408,7 @@ header .nav-bar a:hover::before {
 }
 
 .to-top {
-  background: #0e0d0f;
+  background: rgba(14, 13, 15, 0.8784313725);
   position: fixed;
   bottom: 16px;
   right: 32px;
