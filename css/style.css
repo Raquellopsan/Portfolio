@@ -489,7 +489,7 @@ header .nav-bar a:hover::before {
     width: 100vw;
     transition: 0.5s;
     overflow: hidden;
-    background-color: rgba(29, 26, 31, 0.768627451);
+    background-color: #151316;
   }
   header .nav-bar ul {
     display: block;
@@ -666,7 +666,4 @@ header .nav-bar a:hover::before {
   .footer p {
     font-size: 0.9em;
   }
-}
-.col-12 {
-  width: 100%;
 }/*# sourceMappingURL=style.css.map */
