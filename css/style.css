@@ -129,6 +129,7 @@ header .nav-bar a:hover::before {
 
 .sobre-mi {
   padding: 50px 80px;
+  margin-top: -30px;
 }
 .sobre-mi .titulo {
   text-align: center;
@@ -626,8 +627,8 @@ header .nav-bar a:hover::before {
     width: 275px;
   }
   .sobre-mi {
-    padding: 50px 20px;
-    margin-top: -40px;
+    padding: 10px 20px;
+    margin-top: -60px;
   }
   .sobre-mi .contenedor_sobremi {
     flex-direction: column-reverse;
