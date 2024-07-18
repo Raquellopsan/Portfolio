@@ -32,7 +32,7 @@ setTimeout(() => {
   video.play();
 }, 500);
 
-// OPCIONES GALERIA PORTFOLIO
+// FILTRADO GALERIA
 
 const categorias = document.querySelector(".categorias");
 const proyectos = document.querySelectorAll(".card_proyecto");
@@ -54,8 +54,7 @@ categorias.addEventListener("click", (event) => {
   }
 });
 
-// SECCION.offsetTop
-// window.scrollY >= SECCION.offsetTop
+//VALIDACION FORMULARIO
 
 function validar(event) {
   event.preventDefault();
