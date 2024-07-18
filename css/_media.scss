@@ -129,9 +129,9 @@
 }
 @media (max-width: 720px){
     .banner{
-        background-color: red;
+        //background-color: red;
         margin-top: 40px;
-        
+        height: 78vh;
         padding: 0px 60px;
     
         .nombre{
@@ -156,7 +156,7 @@
 
     .sobre-mi{
         padding: 0px 40px ;
-        margin-top: -20px;
+        
 
         
         .contenedor_sobremi{
