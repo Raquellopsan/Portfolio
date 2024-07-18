@@ -130,11 +130,12 @@
 @media (max-width: 720px){
     .banner{
         //background-color: red;
-        margin-top: -40px;
+        margin-top: 40px;
         
-        padding: 40px 60px;
+        padding: 0px 60px;
     
         .nombre{
+            
             h2{
                 font-size: 1.1em;
             }
@@ -154,8 +155,10 @@
     }
 
     .sobre-mi{
-        padding: 50px 40px ;
-        margin-top: -200px;
+        padding: 0px 40px ;
+        margin-top: -20px;
+
+        
         .contenedor_sobremi{
             flex-direction: column-reverse;
             justify-content: center;
