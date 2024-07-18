@@ -627,6 +627,7 @@ header .nav-bar a:hover::before {
   }
   .sobre-mi {
     padding: 50px 20px;
+    margin-top: -40px;
   }
   .sobre-mi .contenedor_sobremi {
     flex-direction: column-reverse;
@@ -690,6 +691,7 @@ header .nav-bar a:hover::before {
   }
   .sobre-mi {
     padding: 50px 20px;
+    margin-top: -40px;
   }
   .sobre-mi .contenedor_sobremi {
     flex-direction: column-reverse;
