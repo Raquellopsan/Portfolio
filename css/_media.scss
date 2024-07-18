@@ -155,6 +155,7 @@
 
     .sobre-mi{
         padding: 50px 40px ;
+        margin-top: -200px;
         .contenedor_sobremi{
             flex-direction: column-reverse;
             justify-content: center;
@@ -259,7 +260,8 @@
 
     .sobre-mi{
         padding: 10px 20px ;
-        margin-top: -500px;
+        
+        
         .contenedor_sobremi{
             flex-direction: column-reverse;
             justify-content: center;
