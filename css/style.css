@@ -605,6 +605,9 @@ header .nav-bar a:hover::before {
   }
 }
 @media (max-width: 375px) {
+  header {
+    padding: 0 20px;
+  }
   .banner {
     margin-top: -40px;
     padding: 40px 30px;
