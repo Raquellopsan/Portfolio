@@ -544,7 +544,7 @@ header .nav-bar a:hover::before {
     font-size: 1.1em;
   }
 }
-@media (max-width: 501px) {
+@media (max-width: 720px) {
   .banner {
     margin-top: -40px;
     padding: 40px 60px;
